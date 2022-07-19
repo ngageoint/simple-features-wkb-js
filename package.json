@@ -1,6 +1,6 @@
 {
   "name": "@ngageoint/simple-features-wkb-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Features WKB JavaScript Library",
   "keywords": [
     "NGA",
@@ -36,7 +36,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "@ngageoint/simple-features-js": "1.0.0"
+    "@ngageoint/simple-features-js": "1.0.1"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "0.1.3",
