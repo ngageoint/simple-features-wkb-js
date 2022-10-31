@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ByteWriter | @ngageoint/simple-features-wkb-js - v1.0.2</title>
+	<title>ByteReader | @ngageoint/simple-features-wkb-js - v1.0.2</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,21 +56,28 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="bytewriter.html">ByteWriter</a>
+					<a href="bytereader.html">ByteReader</a>
 				</li>
 			</ul>
-			<h1>Class ByteWriter</h1>
+			<h1>Class ByteReader</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This class was heavily influenced by <a href="https://github.com/cschwarz/wkx/blob/master/lib/binaryreader.js">https://github.com/cschwarz/wkx/blob/master/lib/binaryreader.js</a></p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ByteWriter</span>
+						<span class="target">ByteReader</span>
 					</li>
 				</ul>
 			</section>
@@ -81,36 +88,33 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#allowresize" class="tsd-kind-icon">allow<wbr>Resize</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#buffer" class="tsd-kind-icon">buffer</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#byteorder" class="tsd-kind-icon">byte<wbr>Order</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#position" class="tsd-kind-icon">position</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writedouble" class="tsd-kind-icon">write<wbr>Double</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writefloat" class="tsd-kind-icon">write<wbr>Float</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writeint" class="tsd-kind-icon">write<wbr>Int</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writeint16" class="tsd-kind-icon">write<wbr>Int16</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writeint32" class="tsd-kind-icon">write<wbr>Int32</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writeint8" class="tsd-kind-icon">write<wbr>Int8</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writeuint16" class="tsd-kind-icon">writeUInt16</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writeuint32" class="tsd-kind-icon">writeUInt32</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writeuint8" class="tsd-kind-icon">writeUInt8</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#buffer" class="tsd-kind-icon">buffer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#byteorder" class="tsd-kind-icon">byte<wbr>Order</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#position" class="tsd-kind-icon">position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readbyte" class="tsd-kind-icon">read<wbr>Byte</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readdouble" class="tsd-kind-icon">read<wbr>Double</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readfloat" class="tsd-kind-icon">read<wbr>Float</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readint" class="tsd-kind-icon">read<wbr>Int</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readint16" class="tsd-kind-icon">read<wbr>Int16</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readint32" class="tsd-kind-icon">read<wbr>Int32</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readint8" class="tsd-kind-icon">read<wbr>Int8</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readuint16" class="tsd-kind-icon">readUInt16</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readuint32" class="tsd-kind-icon">readUInt32</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readuint8" class="tsd-kind-icon">readUInt8</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#ensuresize" class="tsd-kind-icon">ensure<wbr>Size</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#getbuffer" class="tsd-kind-icon">get<wbr>Buffer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#getbyteorder" class="tsd-kind-icon">get<wbr>Byte<wbr>Order</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#setbyteorder" class="tsd-kind-icon">set<wbr>Byte<wbr>Order</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writebuffer" class="tsd-kind-icon">write<wbr>Buffer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytewriter.html#writevarint" class="tsd-kind-icon">write<wbr>Var<wbr>Int</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#getbyteorder" class="tsd-kind-icon">get<wbr>Byte<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#readvarint" class="tsd-kind-icon">read<wbr>Var<wbr>Int</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="bytereader.html#setbyteorder" class="tsd-kind-icon">set<wbr>Byte<wbr>Order</a></li>
 							</ul>
 						</section>
 					</div>
@@ -122,28 +126,25 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Byte<wbr>Writer<span class="tsd-signature-symbol">(</span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, byteOrder<span class="tsd-signature-symbol">?: </span><a href="../enums/byteorder.html" class="tsd-signature-type">ByteOrder</a>, allowResize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bytewriter.html" class="tsd-signature-type">ByteWriter</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Byte<wbr>Reader<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, byteOrder<span class="tsd-signature-symbol">?: </span><a href="../enums/byteorder.html" class="tsd-signature-type">ByteOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="bytereader.html" class="tsd-signature-type">ByteReader</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L19">lib/ByteWriter.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L19">lib/ByteReader.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>size: <span class="tsd-signature-type">number</span></h5>
+									<h5>buffer: <span class="tsd-signature-type">Buffer</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> byteOrder: <a href="../enums/byteorder.html" class="tsd-signature-type">ByteOrder</a><span class="tsd-signature-symbol"> =&nbsp;ByteOrder.BIG_ENDIAN</span></h5>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> allowResize: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="bytewriter.html" class="tsd-signature-type">ByteWriter</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="bytereader.html" class="tsd-signature-type">ByteReader</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -151,22 +152,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="allowresize" class="tsd-anchor"></a>
-					<h3>allow<wbr>Resize</h3>
-					<div class="tsd-signature tsd-kind-icon">allow<wbr>Resize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L9">lib/ByteWriter.ts:9</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
 					<a name="buffer" class="tsd-anchor"></a>
 					<h3>buffer</h3>
 					<div class="tsd-signature tsd-kind-icon">buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L7">lib/ByteWriter.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L7">lib/ByteReader.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">byte<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="../enums/byteorder.html" class="tsd-signature-type">ByteOrder</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L10">lib/ByteWriter.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L9">lib/ByteReader.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,143 +177,113 @@
 					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L8">lib/ByteWriter.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L8">lib/ByteReader.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writedouble" class="tsd-anchor"></a>
-					<h3>write<wbr>Double</h3>
-					<div class="tsd-signature tsd-kind-icon">write<wbr>Double<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readbyte" class="tsd-anchor"></a>
+					<h3>read<wbr>Byte</h3>
+					<div class="tsd-signature tsd-kind-icon">read<wbr>Byte<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L18">lib/ByteWriter.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L18">lib/ByteReader.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writefloat" class="tsd-anchor"></a>
-					<h3>write<wbr>Float</h3>
-					<div class="tsd-signature tsd-kind-icon">write<wbr>Float<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readdouble" class="tsd-anchor"></a>
+					<h3>read<wbr>Double</h3>
+					<div class="tsd-signature tsd-kind-icon">read<wbr>Double<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L17">lib/ByteWriter.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L17">lib/ByteReader.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writeint" class="tsd-anchor"></a>
-					<h3>write<wbr>Int</h3>
-					<div class="tsd-signature tsd-kind-icon">write<wbr>Int<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readfloat" class="tsd-anchor"></a>
+					<h3>read<wbr>Float</h3>
+					<div class="tsd-signature tsd-kind-icon">read<wbr>Float<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L19">lib/ByteWriter.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L16">lib/ByteReader.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writeint16" class="tsd-anchor"></a>
-					<h3>write<wbr>Int16</h3>
-					<div class="tsd-signature tsd-kind-icon">write<wbr>Int16<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readint" class="tsd-anchor"></a>
+					<h3>read<wbr>Int</h3>
+					<div class="tsd-signature tsd-kind-icon">read<wbr>Int<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L15">lib/ByteWriter.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L19">lib/ByteReader.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writeint32" class="tsd-anchor"></a>
-					<h3>write<wbr>Int32</h3>
-					<div class="tsd-signature tsd-kind-icon">write<wbr>Int32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readint16" class="tsd-anchor"></a>
+					<h3>read<wbr>Int16</h3>
+					<div class="tsd-signature tsd-kind-icon">read<wbr>Int16<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L16">lib/ByteWriter.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L14">lib/ByteReader.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writeint8" class="tsd-anchor"></a>
-					<h3>write<wbr>Int8</h3>
-					<div class="tsd-signature tsd-kind-icon">write<wbr>Int8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readint32" class="tsd-anchor"></a>
+					<h3>read<wbr>Int32</h3>
+					<div class="tsd-signature tsd-kind-icon">read<wbr>Int32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L14">lib/ByteWriter.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L15">lib/ByteReader.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writeuint16" class="tsd-anchor"></a>
-					<h3>writeUInt16</h3>
-					<div class="tsd-signature tsd-kind-icon">writeUInt16<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readint8" class="tsd-anchor"></a>
+					<h3>read<wbr>Int8</h3>
+					<div class="tsd-signature tsd-kind-icon">read<wbr>Int8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L12">lib/ByteWriter.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L13">lib/ByteReader.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writeuint32" class="tsd-anchor"></a>
-					<h3>writeUInt32</h3>
-					<div class="tsd-signature tsd-kind-icon">writeUInt32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readuint16" class="tsd-anchor"></a>
+					<h3>readUInt16</h3>
+					<div class="tsd-signature tsd-kind-icon">readUInt16<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L13">lib/ByteWriter.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L11">lib/ByteReader.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="writeuint8" class="tsd-anchor"></a>
-					<h3>writeUInt8</h3>
-					<div class="tsd-signature tsd-kind-icon">writeUInt8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<a name="readuint32" class="tsd-anchor"></a>
+					<h3>readUInt32</h3>
+					<div class="tsd-signature tsd-kind-icon">readUInt32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L11">lib/ByteWriter.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L12">lib/ByteReader.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="readuint8" class="tsd-anchor"></a>
+					<h3>readUInt8</h3>
+					<div class="tsd-signature tsd-kind-icon">readUInt8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L10">lib/ByteReader.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
-					<a name="ensuresize" class="tsd-anchor"></a>
-					<h3>ensure<wbr>Size</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Size<span class="tsd-signature-symbol">(</span>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L83">lib/ByteWriter.ts:83</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>size: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
-					<a name="getbuffer" class="tsd-anchor"></a>
-					<h3>get<wbr>Buffer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Buffer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L95">lib/ByteWriter.ts:95</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
 					<a name="getbyteorder" class="tsd-anchor"></a>
 					<h3>get<wbr>Byte<wbr>Order</h3>
@@ -333,10 +294,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L61">lib/ByteWriter.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L51">lib/ByteReader.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/byteorder.html" class="tsd-signature-type">ByteOrder</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="readvarint" class="tsd-anchor"></a>
+					<h3>read<wbr>Var<wbr>Int</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Var<wbr>Int<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L35">lib/ByteReader.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -350,7 +328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L36">lib/ByteWriter.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/0d5a732/lib/ByteReader.ts#L55">lib/ByteReader.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -360,52 +338,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
-					<a name="writebuffer" class="tsd-anchor"></a>
-					<h3>write<wbr>Buffer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">write<wbr>Buffer<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L65">lib/ByteWriter.ts:65</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>buffer: <span class="tsd-signature-type">Buffer</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
-					<a name="writevarint" class="tsd-anchor"></a>
-					<h3>write<wbr>Var<wbr>Int</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">write<wbr>Var<wbr>Int<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ngageoint/simple-features-wkb-js/blob/c6228ca/lib/ByteWriter.ts#L71">lib/ByteWriter.ts:71</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -424,78 +356,69 @@
 					<li class=" tsd-kind-enum tsd-is-external">
 						<a href="../enums/byteorder.html" class="tsd-kind-icon">Byte<wbr>Order</a>
 					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="bytereader.html" class="tsd-kind-icon">Byte<wbr>Reader</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-is-external">
-						<a href="bytewriter.html" class="tsd-kind-icon">Byte<wbr>Writer</a>
+						<a href="bytereader.html" class="tsd-kind-icon">Byte<wbr>Reader</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="bytereader.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#allowresize" class="tsd-kind-icon">allow<wbr>Resize</a>
+								<a href="bytereader.html#buffer" class="tsd-kind-icon">buffer</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#buffer" class="tsd-kind-icon">buffer</a>
+								<a href="bytereader.html#byteorder" class="tsd-kind-icon">byte<wbr>Order</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#byteorder" class="tsd-kind-icon">byte<wbr>Order</a>
+								<a href="bytereader.html#position" class="tsd-kind-icon">position</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#position" class="tsd-kind-icon">position</a>
+								<a href="bytereader.html#readbyte" class="tsd-kind-icon">read<wbr>Byte</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writedouble" class="tsd-kind-icon">write<wbr>Double</a>
+								<a href="bytereader.html#readdouble" class="tsd-kind-icon">read<wbr>Double</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writefloat" class="tsd-kind-icon">write<wbr>Float</a>
+								<a href="bytereader.html#readfloat" class="tsd-kind-icon">read<wbr>Float</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writeint" class="tsd-kind-icon">write<wbr>Int</a>
+								<a href="bytereader.html#readint" class="tsd-kind-icon">read<wbr>Int</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writeint16" class="tsd-kind-icon">write<wbr>Int16</a>
+								<a href="bytereader.html#readint16" class="tsd-kind-icon">read<wbr>Int16</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writeint32" class="tsd-kind-icon">write<wbr>Int32</a>
+								<a href="bytereader.html#readint32" class="tsd-kind-icon">read<wbr>Int32</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writeint8" class="tsd-kind-icon">write<wbr>Int8</a>
+								<a href="bytereader.html#readint8" class="tsd-kind-icon">read<wbr>Int8</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writeuint16" class="tsd-kind-icon">writeUInt16</a>
+								<a href="bytereader.html#readuint16" class="tsd-kind-icon">readUInt16</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writeuint32" class="tsd-kind-icon">writeUInt32</a>
+								<a href="bytereader.html#readuint32" class="tsd-kind-icon">readUInt32</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writeuint8" class="tsd-kind-icon">writeUInt8</a>
+								<a href="bytereader.html#readuint8" class="tsd-kind-icon">readUInt8</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#ensuresize" class="tsd-kind-icon">ensure<wbr>Size</a>
+								<a href="bytereader.html#getbyteorder" class="tsd-kind-icon">get<wbr>Byte<wbr>Order</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#getbuffer" class="tsd-kind-icon">get<wbr>Buffer</a>
+								<a href="bytereader.html#readvarint" class="tsd-kind-icon">read<wbr>Var<wbr>Int</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#getbyteorder" class="tsd-kind-icon">get<wbr>Byte<wbr>Order</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#setbyteorder" class="tsd-kind-icon">set<wbr>Byte<wbr>Order</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writebuffer" class="tsd-kind-icon">write<wbr>Buffer</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
-								<a href="bytewriter.html#writevarint" class="tsd-kind-icon">write<wbr>Var<wbr>Int</a>
+								<a href="bytereader.html#setbyteorder" class="tsd-kind-icon">set<wbr>Byte<wbr>Order</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-is-external">
+						<a href="bytewriter.html" class="tsd-kind-icon">Byte<wbr>Writer</a>
+					</li>
 					<li class=" tsd-kind-class tsd-is-external">
 						<a href="geometrycodes.html" class="tsd-kind-icon">Geometry<wbr>Codes</a>
 					</li>
